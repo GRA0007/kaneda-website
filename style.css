@@ -1,0 +1,185 @@
+* {
+	outline:none;
+}
+body {
+	margin:0;
+	background-color:#333;
+	font-family:Roboto, sans-serif;
+	color:#FFF;
+}
+a {
+	color:#FFF;
+}
+table {
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+	border-collapse:collapse;
+	border-spacing:0;
+	table-layout:fixed;
+}
+table img,
+table tr:first-child td:first-child {
+	width:500px;
+}
+h1, h2, h3 {
+	display:inline-block;
+	margin:0;
+}
+h1 {
+	font-size:135px;
+	font-family:'Roboto Slab', Roboto, sans-serif;
+	padding-top:50px;
+}
+h2 {
+	font-size:45px;
+	font-family:'Roboto Mono', Roboto, sans-serif;
+	font-weight:normal;
+	margin-top:-30px;
+}
+h3 {
+	font-size:30px;
+	font-family:'Roboto Mono', Roboto, sans-serif;
+	font-weight:normal;
+}
+#kbutton {
+	text-decoration:none;
+	display:inline-block;
+	color:#DDD;
+	padding:15px 20px;
+	background-color:#333;
+	font-weight:bold;
+	font-size:20px;
+	transition:background-position 0.15s, color 0.15s;
+	background: linear-gradient(to top, #DDD 0%, #DDD 50%, #333 50%, #333 100%);
+	background-size:100% 200%;
+	border:4px solid #DDD;
+	background-position:top;
+	margin-top:40px;
+	font-family:Roboto, sans-serif;
+}
+#kbutton:hover {
+	background-position:bottom;
+	color:#333;
+}
+table tr:nth-child(2) td,
+table tr:nth-child(3) td {
+	padding-top:20px;
+	background-image:linear-gradient(to right, #DDD 50%, transparent 50%);
+	background-position:left top;
+	background-repeat:repeat-x;
+	background-size:30px 2px;
+}
+
+#features {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#features>div {
+	width:30%;
+	padding:20px 0;
+}
+#features>div>span {
+	font-weight:bold;
+	font-size:20px;
+	display:block;
+}
+#features>div>p {
+	margin:10px 0;
+}
+i {
+	font-style:normal;
+}
+
+#donate button {
+	border:0;
+	border-radius:5px;
+	background-color:#FF9800;
+	color:#FFF;
+	font-family:Roboto, sans-serif;
+	font-size:20px;
+	padding:7px 20px;
+	cursor:pointer;
+	position:relative;
+	box-sizing:padding-box;
+	border-bottom:2px solid #EF6C00;
+}
+#donate button:active {
+	border-top:2px solid #333;
+	border-bottom:0;
+}
+#donate button img {
+	vertical-align:middle;
+	height:20px;
+	width:70px;
+}
+
+#footer {
+	padding-top:30px;
+}
+#footer span {
+	text-align:right;
+	border-top:2px solid #666;
+	color:#888;
+	padding:10px 0;
+	display:block;
+}
+
+@media screen and (max-width: 1120px) {
+	table {
+		width:100vw;
+	}
+	table img {
+		width:300px;
+	}
+	table tr:first-child td:first-child,
+	table tr:first-child td:nth-child(2) {
+		width:100vw;
+		display:block;
+		text-align:center;
+		padding:0;
+	}
+	h1 {
+		padding-top:0px;
+		margin-top:-50px;
+	}
+	table tr:first-child td:nth-child(2) {
+		padding-bottom:60px;
+	}
+	table tr:nth-child(2) td,
+	table tr:nth-child(3) td,
+	#footer span {
+		padding-left:20px;
+		padding-right:20px;
+	}
+}
+@media screen and (max-width: 900px) {
+	#features>div {
+		width:48%;
+	}
+}
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size:70px;
+		padding-top:0px;
+		margin-top:-50px;
+	}
+	h2 {
+		font-size:30px;
+		margin-top:-30px;
+	}
+	h3 {
+		font-size:20px;
+	}
+	#kbutton {
+		margin-top:20px;
+	}
+	table tr:first-child td:nth-child(2) {
+		padding-bottom:30px;
+	}
+	#features>div {
+		width:100%;
+		padding:10px 0;
+	}
+}
